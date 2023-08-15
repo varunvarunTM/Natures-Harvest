@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Harvest</title>
+    <link rel="stylesheet" href="/main page/style.css">
+</head>
+
+<body>
+
+    <section class="header-area">
+        <div class="header-container">
+            <div class="site-logo">
+                <img src="https://judgeme.imgix.net/g/nature-s-harvest-natural-dog-food/1665155461__logo2__original.png?auto=format&w=200" style="
+                   
+                   height: 52px;
+                   position: absolute;
+                   width: 102px;
+                   margin-top: -24px;
+                   left: 30px;
+               
+               ">
+            </div>
+            <div id="mySidenav" class="sidenav" style="width: 250px;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/about page/about.html">About</a>
+                <a href="#featured">Shopping</a>
+                <a href="#farmers">Farmer profile</a>
+                <a href="/contact us page/contact-us.html">Contact Us</a>
+                <a href="#affiliate-section">Affiliate</a>
+                
+            </div>
+
+            <span style="position: relative;
+                left: 49rem;
+                bottom: 4px;">
+                <div class="container-1" onclick="openNav(); myFunction(this)" style="float: right;">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </span>
+
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for products or farmers">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="banner" id="banner">
+        <img class="banner-1"
+            src="https://img.freepik.com/free-photo/high-angle-farmland-view_23-2148579680.jpg?w=2000&t=st=1692000094~exp=1692000694~hmac=e2e8113a735ba32dabf7deecce4a050ac467c9099c6bd86802bae6e78985262f"
+            alt="banner">
+        <div class="top-left">
+            <h2 style="color: black; font-size: 3rem;">Find Fresh, Locally Grown Crops</h2>
+            <p style="color: black; font-size: 32px;">Connect directly with farmers in your area and buy their produce.
+            </p>
+        </div>
+    </section>
+
+    <section id="featured" class="featured">
+        <h2 style="text-align: center;">Featured Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://img.freepik.com/free-photo/top-view-ripe-fresh-tomatoes-with-water-drops-black-background_141793-3432.jpg?w=2000&t=st=1691998921~exp=1691999521~hmac=b0aff4e91e3d29e21008791c17416f094eb3fd021a92385f4ac9f335881e8c22"
+                    alt="Product 1">
+                <h3>Organic Tomatoes</h3>
+                <p>Locally grown, pesticide-free tomatoes.</p>
+                <p class="price">$2.99 per lb</p>
+                <button class="btn buy-now">Buy Now</button>
+                <div class="add-to-cart">
+                    <p>Item added to cart</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.freepik.com/free-photo/close-up-staked-green-farm-fresh-zucchini-sale_23-2148209686.jpg?w=1800&t=st=1691999033~exp=1691999633~hmac=f0c8ca231fe3f20f172c29ff0c116372ee4c6cfecc178e839d71908099ef366f"
+                    alt="Product 2">
+                <h3>Organic Zucchini</h3>
+                <p>Fresh and nutritious zucchinis.</p>
+                <p class="price">$1.49 per lb</p>
+                <button class="btn buy-now" style="top: 0rem;">Buy Now</button>
+                <div class="add-to-cart" style="top: 0;">
+                    <p>Item added to cart</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.freepik.com/free-photo/fresh-spinach-leaves-bowl-isolated_144627-30027.jpg?w=2000&t=st=1691999063~exp=1691999663~hmac=b0078bef6d2d54f27ebcdff07141e0ae312ba9f855d6f22ea2ce5cece7242aa1"
+                    alt="Product 3">
+                <h3>Organic Spinach</h3>
+                <p>Nutrient-rich spinach leaves.</p>
+                <p class="price">$3.25 per bunch</p>
+                <button class="btn buy-now">Buy Now</button>
+                <div class="add-to-cart">
+                    <p>Item added to cart</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.freepik.com/free-photo/close-up-shot-bunch-fresh-ripe-carrots-old-chopping-board-with-deep-cuts_346278-439.jpg?w=2000&t=st=1691999100~exp=1691999700~hmac=9100796ee052208081dc9a9033e1de155e334ffc5494ae7bfe8922364803536f"
+                    alt="Product 4">
+                <h3>Organic Carrots</h3>
+                <p>Sweet and crunchy organic carrots.</p>
+                <p class="price">$1.99 per lb</p>
+                <button class="btn buy-now">Buy Now</button>
+                <div class="add-to-cart">
+                    <p>Item added to cart</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.freepik.com/free-photo/side-view-green-red-apples-basket-brown-towel-wooden-background_141793-12152.jpg?w=2000&t=st=1691999134~exp=1691999734~hmac=f638db73f52fb8200949f204fe33073beb9ca362277e85ffbdf489af6c986550"
+                    alt="Product 5">
+                <h3>Organic Apples</h3>
+                <p>Juicy and flavorful organic apples.</p>
+                <p class="price">$0.99 each</p>
+                <button class="btn buy-now">Buy Now</button>
+                <div class="add-to-cart">
+                    <p>Item added to cart</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.freepik.com/free-photo/frozen-mixed-berry_1339-7844.jpg?w=2000&t=st=1691999168~exp=1691999768~hmac=6dbc55a0a6e7a1ebd4049c241fc346740834e98ea4341043834647964a081839"
+                    alt="Product 6">
+                <h3>Organic Berries Mix</h3>
+                <p>A delightful mix of fresh berries.</p>
+                <p class="price">$4.50 per pint</p>
+                <button class="btn buy-now" style="top: 0rem;">Buy Now</button>
+                <div class="add-to-cart" style="top: 0;">
+                    <p>Item added to cart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- the total cart section  1-->
+    <div class="cart">
+        <h2>Cart</h2>
+        <p class="total-amount">Total: $0.00</p>
+        <a href="/checkout page/check-out.html"><button class="btn buy-cart">Buy Now</button></a>
+    </div>
+
+    <section id="farmers" class="farmers">
+        <h2 style="text-align: center;">Meet Our Farmers</h2>
+        <div class="farmer-profile">
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/indian-fisherman-kerela-india_53876-31631.jpg?w=1380&t=st=1691999211~exp=1691999811~hmac=9101e75a903c13ab6f427581f0fb6071e4fdedba9a7d282394e5c7efb37ff5ea"
+                    alt="Farmer 1">
+                <h3>Kishan lal</h3>
+                <p>Farm Owner</p>
+                <p>Location: Punjab</p>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/indian-man-portrait-temple_53876-14535.jpg?w=996&t=st=1692015196~exp=1692015796~hmac=66b17cfbc067cfb90182ed92db0a627454158e1e0808841faedfdbf00f01fee9"
+                    alt="Farmer 2" style="height: 14rem;">
+                <h3>Rudra Oberoi</h3>
+                <p>Organic Farmer</p>
+                <p>Location: Bihar</p>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/premium-photo/happy-indian-farmer-green-cotton-field_54391-2204.jpg?w=900"
+                    alt="Farmer 1" style="height: 15rem;">
+                <h3>Sanjay Yadav</h3>
+                <p>Farm Owner</p>
+                <p>Location: UP</p>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/indian-man-room-male-traditional-turban-hinduist-room_1157-41040.jpg?w=900&t=st=1692015381~exp=1692015981~hmac=1457a86ce9f98e04be53ed4b9d2a32f9a25e07f5238b076262c55c14d59474a1"
+                    alt="Farmer 1" style="height: 15rem;">
+                <h3>Amriderpal Singh</h3>
+                <p>Farm Owner</p>
+                <p>Location: Punjab</p>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/premium-photo/young-indian-farmer-standing-cotton-agriculture-field_54391-5761.jpg?w=900"
+                    alt="Farmer 1" style="height: 15rem;">
+                <h3>Tushar Choudhary</h3>
+                <p>Farm Owner</p>
+                <p>Location: Haryana</p>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- review section -->
+
+    <section id="reviews" class="reviews">
+        <h2 style="text-align: center;">Product Reviews</h2>
+        <div class="review-form">
+            <h3>Leave a Review</h3>
+            <form id="review-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+
+        <section id="reviews" class="reviews-w">
+            <h2 style="text-align: center;">Product Reviews</h2>
+
+            <div class="review-list">
+                <h3>Customer Reviews</h3>
+                <ul id="reviews-list">
+
+                </ul>
+            </div>
+        </section>
+
+
+        </ul>
+        </div>
+    </section>
+
+    <section id="affiliate-section" class="affiliate-section">
+        <div class="affiliate-content">
+            <h2>Affiliate Program</h2>
+            <p>Join our Affiliate Program and earn rewards for referring new customers to our platform. Help us connect
+                more consumers with local farmers!</p>
+            <a href="affiliate.html" class="btn btn-affiliate">Learn More</a>
+        </div>
+        <img style="width: 52%;"
+            src="https://img.freepik.com/premium-photo/technology-concept-young-indian-farmer-showing-smartphone_54391-5615.jpg?w=2000"
+            alt="Affiliate Program">
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Nature Harvest</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

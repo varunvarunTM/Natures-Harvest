@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="check-out.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <section class="checkout">
+        <div class="checkout-summary">
+            <h2>Order Summary</h2>
+            <!-- Display order details, products, and total amount here -->
+        </div>
+        
+        <div class="personal-info">
+            <h2>Personal Information</h2>
+            <form id="personal-info-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" rows="3" required></textarea>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+            </form>
+        </div>
+
+        <div class="payment-form">
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+
+                <label for="expiration-date">Expiration Date:</label>
+                <input type="text" id="expiration-date" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+
+                <button class="btn btn-confirm">Confirm Payment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nature Harvest</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const personalInfoForm = document.getElementById("personal-info-form");
+            const paymentForm = document.getElementById("payment-form");
+            const confirmPaymentButton = document.querySelector(".btn-confirm");
+            
+            confirmPaymentButton.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                // Collect personal information from the form
+                const fullName = document.getElementById("full-name").value;
+                const email = document.getElementById("email").value;
+                const address = document.getElementById("address").value;
+                const phone = document.getElementById("phone").value;
+
+                // Collect payment details from the form
+                const cardNumber = document.getElementById("card-number").value;
+                const expirationDate = document.getElementById("expiration-date").value;
+                const cvv = document.getElementById("cvv").value;
+
+                // Call the payment gateway's API to process the payment
+                // Replace this with your actual payment gateway integration code
+                // For example, if you're using Stripe:
+                // stripe.createPaymentMethod({
+                //     type: 'card',
+                //     card: {
+                //         number: cardNumber,
+                //         exp_month: expirationMonth,
+                //         exp_year: expirationYear,
+                //         cvc: cvv
+                //     }
+                // }).then(result => {
+                //     if (result.error) {
+                //         // Handle error
+                //     } else {
+                //         // Payment successful, process the order
+                //     }
+                // });
+
+                // Remember to handle success and error scenarios appropriately
+            });
+        });
+    </script>
+</body>
+</html>
